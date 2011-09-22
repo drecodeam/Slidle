@@ -1,0 +1,412 @@
+/*
+Theme Name: slide
+Theme URI: http://www.ankuranand.in/slide
+Description: Wordpress sliding sidebar theme
+Version: 0.1
+Author: Ankur Anand
+Author URI: http://ankuranand.in
+*/
+
+
+@font-face {  
+  font-family: helvetica ;  
+  src: url( Helvetica.ttf ) format("truetype");  
+}
+body{
+background: url('bg.jpg');
+font-family: helvetica;
+line-height:1.7em;
+letter-spacing:0px;
+font-size:15px;
+}
+
+#arrow{
+    margin-left:-3px;
+    top:50%;
+    position:relative;
+    max-width:100px;
+    display:block;
+}
+
+#arrow_close{
+    display:none;
+    position:absolute;
+    right:0;
+    top:50%;
+    opacity:0;
+}
+
+
+
+
+#header{
+    line-height:normal;
+    width:auto;
+    font-size:4em;
+    margin-left:2%;
+    color:rgba(51,203,152,0.4);
+    color:#4C4C4C;
+    font-weight:900;
+    letter-spacing:-5px;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+
+.header_desc{
+    display:block;
+    position:relative;
+    font-size:20px;
+    letter-spacing:0px;
+    color:inherit;
+    opacity:1;
+    width:60%;
+    left:20%;
+    margin-top:20px;
+    padding:10px;
+    color:#7F7F7F;
+    text-align:center;
+    border-bottom:1px solid rgba(51,51,51,0.4);
+    border-top:1px solid rgba(51,51,51,0.4);
+
+}
+
+
+
+#side{
+    background-color:#333333;
+    position:fixed;
+    height:100%;
+    left:0px;
+    top:0px;
+    overflow:hidden;
+    float:left;
+    display:block;
+    z-index:5;
+    width:30px;
+    line-height:1em;
+        
+}
+
+
+
+#side:hover{
+    opacity:1;
+}
+
+
+#content{
+    display:block;
+    margin-left:10%;
+    width:90%;
+    float:left;
+    position:relative;
+}
+
+.post_info{
+    position:relative;
+    display:block;
+    width:20%;
+    margin-top:40px;
+float:left;
+clear:left;
+margin-left:10%;
+}
+
+.post_entry{
+    display:block;
+    width:55%;
+    float:left;
+    margin-left:0px;
+    margin-top:40px;
+    border-left:3px solid #ACE4E6;
+    padding-left:5px;
+    position:relative;
+    text-align:justify;
+
+}
+
+.post_date{
+    font-size:3em;
+    color:#CCCCCC;
+    line-height:0.8em;
+    font-weight:500;
+}
+
+.post_category{
+    margin-top:20px;
+    text-decoration:none !important;
+    border-top:1px solid #ACE4E6;
+    line-height:1.5em;
+    padding-top:10px;
+}
+
+.post_category a{
+    border-radius:7px;
+    padding:5px 10px 5px 10px;
+    text-decoration:none !important;
+    color:#4B4B4B;
+    font-size:12px;
+    margin-top:15px;
+    font-weight:500;
+}
+
+.post_category a:hover{
+    background:#66FFCC;
+
+}
+
+
+.post_text{
+    top:0px;
+    width:100%;
+    display:block;
+    position:relative;
+    float:left;
+    color:#333333;
+        
+
+}
+
+
+.post_comment{
+    line-height:normal;
+    border-top:1px solid #ACE4E6;
+    float:left;
+    display:block;
+    margin-top:10px;
+    font-size:2.5em;
+    clear:both;
+    position:relative;
+    
+}
+
+.post_tweet{
+    border-top:1px solid #ACE4E6;
+    font-size:1em;
+    color:#4C4C4C;
+    margin-top:10px;
+    width:auto;
+    display:inherit;
+    position:relative;
+    float:left;
+    clear:both;
+    padding-top:10px;
+}
+
+.post_tweet img{
+    margin-top:-8px;
+    display:inherit;
+    float:left;
+}
+
+.post_tweet a{
+    display:block;
+    position:relative;
+    float:left;
+}
+.post_tweet:hover{
+    color:#0080FF;
+   
+}
+
+
+.post_comment a:hover{
+    color:#33CC99;
+}
+.post_title{
+    top:0px;
+    width:70%;
+    float:left;
+    display:block;
+    text-shadow: 0px 2px 3px #FFFFFF;
+    color:black;
+
+}
+
+.post_title a:hover{
+    color:#ACE4E6;
+}
+
+.post_title a{
+        text-decoration:none !important;
+        font-size:2em;
+        color:black;
+
+}
+
+#read_more{
+    display:block;
+    clear:left;
+    color:#B3B3B3;
+    width:100%;
+    padding:5px 5px 5px 5px;
+    text-align:center;  
+    position:relative;
+}
+
+#read_more a{
+    text-decoration:none;
+    color:inherit;
+}
+#read_more:hover{
+    background:#4C4C4C;
+    color:white;
+    cursor:pointer;
+    opacity:0.4;
+}
+
+#side_title{
+    text-align:center;
+    margin-top:10px;
+    color:white;
+    display:none;
+    padding:0px;
+    font-size:2em;
+    
+}
+.sub_head{
+    font-size:1em;
+    text-align:center;
+    color:white;
+}
+
+
+#side_title p{
+    padding:10px;
+    font-size:0.5em;
+    line-height:normal;
+    color:#808080;
+    text-align:center;
+    text-wrap:normal;
+}
+#side_cat{
+    margin-top:40px;
+    list-style:none;
+    
+
+}
+
+
+#side_logo img{
+    width:50px;
+    margin-left:40%;
+}
+
+
+
+
+#side_cat li{
+    font-size:1.1em;
+    list-style:none;
+    min-width:50px;
+    text-align:center;
+    color:#808080;
+    margin-top:10px;
+    margin-bottom:5px;
+    width:auto;
+        
+}
+
+#side_cat a{
+    text-decoration:none;
+    color:inherit;
+}
+
+#side_cat li:hover{
+color:White;
+}
+
+#social{
+    position:relative;
+    clear:left;
+    margin-left:30% !important;
+    margin-right:10% !important;
+    margin-top:50px !important;
+}
+
+#blog_name{
+    color:white;
+    margin-top:20px;
+    font-size:2.8em;
+    padding:2px 5px 2px 2px;
+    letter-spacing:-5px;
+    line-height:0.7em;
+    color:#000000;
+}
+
+#blog_desc{
+    margin-top:20px;
+    padding:2px 5px 2px 2px;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+a:hover{
+    color:#ACE4E6;
+}
+
+
+#footer{
+    display:block;
+    position:relative;
+    width:50%;
+    border-top:1px black solid;
+    top:80px;
+    padding-left:5px;
+    clear:both;
+    padding-left:25%;
+    padding-right:25%;
+    text-align:center;
+    color:#666666;
+    padding-top:10px;
+    
+}
+
+
+.f_title{
+    padding-top:10px;
+    color:#333333;
+    font-weight:900;
+    font-size:1.3em;
+    text-shadow:0px 0px 1px #B3B3B3;
+}
+
+
+
+#subscribe{
+    text-align:center;
+    color:#808080;
+}
+
+#subscribe a:hover{
+    color:#FF8000;
+    cursor:pointer;
+}
+
+.side_content{
+    display:none;
+}
+
+#f_about{
+    margin-top:10px;
+    padding-bottom:5px;
+    border-top:1px #FF0080 solid;
+
+}
+
+#f_website{
+    margin-top:10px;
+    padding-bottom:10px;
+    border-top:1px #0080FF solid;
+
+
+}
+
+#footer a:hover{
+    color:#0080FF;
+}
+
