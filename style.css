@@ -26,6 +26,7 @@ font-size:15px;
     position:relative;
     max-width:100px;
     display:block;
+    z-index:999;
 }
 
 #arrow_close{
@@ -34,6 +35,7 @@ font-size:15px;
     right:0;
     top:50%;
     opacity:0;
+    z-index:999;
 }
 
 
@@ -280,11 +282,34 @@ margin-left:10%;
     text-align:center;
     text-wrap:normal;
 }
+
 #side_cat{
     margin-top:40px;
     list-style:none;
-    
+}
 
+#side_pages{
+    list-style:none;
+        color:#808080;
+
+}
+
+.side_widget{
+        color:#808080;
+        display:block;
+        position:relative;
+        text-align:center !important;
+        width:100% !important;
+    margin-top:30px !important;        
+}
+
+.side_widget ul{
+    padding:0px;
+}
+.widget_title{
+    font-size:1.1em;
+    text-align:center;
+    color:white; 
 }
 
 
@@ -296,7 +321,7 @@ margin-left:10%;
 
 
 
-#side_cat li{
+#side li{
     font-size:1.1em;
     list-style:none;
     min-width:50px;

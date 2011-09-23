@@ -1,34 +1,6 @@
 <?php get_header(); ?>
-    <body>
-    <div id="side">
-        <div id="arrow">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/arrow.png" width="30px;">
-        </div>
-        <div id="arrow_close">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/arrow_close.png" width="30px;">
-        </div>
-        
-        <div class="side_content">
-        <div id="side_logo">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/logo.png">
-        </div>
-        <div id="side_title">
-                <div class="sub_head"><?php bloginfo('name'); ?> </div><p><?php bloginfo('description'); ?> </p></div>
-    <p id="subscribe"><a href="http://feeds.feedburner.com/drecodeam">Subscribe | RSS feed</a></p>
-
-        <div id="side_cat">
-            <div class="sub_head">|CATEGORIES|</div><br>
-            <?php wp_list_cats(); ?>
-        </div>
-        </div>
-        </div>
-    
-    <div id="header">
-        <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?> </a></div>
-
-    <div class="header_desc">
-    <?php bloginfo('description'); ?></div>
-    </div>
+<?php get_sidebar(); ?>
+ 
         
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <!-- Post Time Info , Category and Comments Start-->

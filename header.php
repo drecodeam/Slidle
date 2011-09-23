@@ -1,5 +1,13 @@
-<html>
+<!DOCTYPE html>
+
+
+<html <?php language_attributes(); ?>>
     <head>
+	
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
+<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
+
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" type="text/css" media="screen" />
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/jquery.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/main.js"></script>
@@ -20,3 +28,9 @@
 	wp_head();
 ?>
 </head>
+    <body>
+    
+    
+    <div id="header">
+        <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?> </a></div>
+    
