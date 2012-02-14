@@ -9,6 +9,8 @@
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/iconic_fill.css" type="text/css" media="screen" />
+
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/jquery.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/main.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>

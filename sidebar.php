@@ -3,7 +3,6 @@
    
 
         <div id="arrow">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/arrow.png" width="30px;">
         </div>
         <div id="arrow_close">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/arrow_close.png" width="30px;">

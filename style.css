@@ -12,33 +12,162 @@ Author URI: http://ankuranand.in
   font-family: helvetica ;  
   src: url( Helvetica.ttf ) format("truetype");  
 }
+@font-face {
+      font-family: "social";
+      src: url("socialico.otf");
+    }
+
+
 body{
-background: url('bg.jpg');
-font-family: helvetica;
 line-height:1.7em;
 letter-spacing:0px;
 font-size:15px;
+margin:0px;
+font-family:sans-serif;
 }
 
+
+/*sidebar css*/
 #arrow{
-    margin-left:-3px;
-    top:50%;
     position:relative;
-    max-width:100px;
     display:block;
-    z-index:999;
+    color:white;
+    font-size:30px;
+    clear:right;
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+    text-align:right;
+    margin-top:35px;
+    margin-bottom:10%;
+    border-top:4px dotted white;
+    height:10px;
 }
 
-#arrow_close{
-    display:none;
-    position:absolute;
-    right:0;
-    top:50%;
-    opacity:0;
-    z-index:999;
+#arrow:hover{
+  border-color:#FFDC07;
+  cursor:pointer;
 }
 
 
+
+
+
+.side_content{
+  clear:both !important;
+  visibility:hidden;
+  position:relative;
+}
+
+
+#side{
+    position:fixed;
+    height:100%;
+    left:0px;
+    top:0px;
+    float:left;
+    display:block;
+    z-index:5;
+    width:3%;
+    line-height:1em;
+    background:url('bg2.png');
+
+}
+
+.side_back{
+      background:url('bg2.png');
+
+}
+
+#side:hover{
+    opacity:1;
+}
+
+#side_title{
+    text-align:center;
+    margin-top:10px;
+    color:white;
+    display:block;
+    padding:0px;
+    font-size:2em;
+    
+}
+.sub_head{
+    font-size:1em;
+    text-align:center;
+    color:white;
+}
+
+
+#side_title p{
+    padding:10px;
+    font-size:0.5em;
+    line-height:normal;
+    color:#808080;
+    text-align:center;
+    text-wrap:normal;
+}
+
+#side_cat{
+    margin-top:40px;
+    list-style:none;
+}
+
+#side_pages{
+    list-style:none;
+        color:#808080;
+
+}
+
+.side_widget{
+        color:#808080;
+        display:block;
+        position:relative;
+        text-align:center !important;
+        width:100% !important;
+    margin-top:30px !important;        
+}
+
+.side_widget ul{
+    padding:0px;
+}
+.widget_title{
+    font-size:1.1em;
+    text-align:center;
+    color:white;
+}
+
+
+#side_logo img{
+    width:50px;
+    margin-left:40%;
+}
+
+
+
+
+#side li{
+    font-size:1.1em;
+    list-style:none;
+    min-width:50px;
+    text-align:center;
+    color:#808080;
+    margin-top:10px;
+    margin-bottom:5px;
+    width:auto;
+        
+}
+
+#side_cat a{
+    text-decoration:none;
+    color:inherit;
+}
+
+#side_cat li:hover{
+color:White;
+}
+
+/*sidebar css ends*/
 
 
 #header{
@@ -46,12 +175,13 @@ font-size:15px;
     width:auto;
     font-size:4em;
     margin-left:2%;
-    color:rgba(51,203,152,0.4);
     color:#4C4C4C;
     font-weight:900;
-    letter-spacing:-5px;
+    letter-spacing:-2px;
     margin-bottom:30px;
     text-align:center;
+    font-weight:100;
+    
 }
 
 
@@ -75,26 +205,23 @@ font-size:15px;
 
 
 
-#side{
-    background-color:#333333;
-    position:fixed;
-    height:100%;
-    left:0px;
-    top:0px;
-    overflow:hidden;
-    float:left;
-    display:block;
-    z-index:5;
-    width:30px;
-    line-height:1em;
-        
+
+
+.popover{
+  top: 5%;
+  right:-10px;
+  margin-top: -5px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #333333;
+  display:block;
+  position:absolute;
+  width: 0;
+  height: 0;
 }
 
 
 
-#side:hover{
-    opacity:1;
-}
 
 
 #content{
@@ -141,13 +268,19 @@ margin-left:10%;
     border-top:1px solid #ACE4E6;
     line-height:1.5em;
     padding-top:10px;
+    display:block;
+    position:relative;
+    float:left;
+
+    
 }
 
 .post_category a{
-    border-radius:7px;
+    border-radius:20px;
     padding:5px 10px 5px 10px;
     text-decoration:none !important;
     color:#4B4B4B;
+    background:#ACE4E6;
     font-size:12px;
     margin-top:15px;
     font-weight:500;
@@ -165,7 +298,7 @@ margin-left:10%;
     display:block;
     position:relative;
     float:left;
-    color:#333333;
+    color:#4C4C4C;
         
 
 }
@@ -221,8 +354,8 @@ margin-left:10%;
     width:70%;
     float:left;
     display:block;
-    text-shadow: 0px 2px 3px #FFFFFF;
-    color:black;
+    color:#191919;
+    font-weight:100;
 
 }
 
@@ -258,89 +391,7 @@ margin-left:10%;
     opacity:0.4;
 }
 
-#side_title{
-    text-align:center;
-    margin-top:10px;
-    color:white;
-    display:none;
-    padding:0px;
-    font-size:2em;
-    
-}
-.sub_head{
-    font-size:1em;
-    text-align:center;
-    color:white;
-}
 
-
-#side_title p{
-    padding:10px;
-    font-size:0.5em;
-    line-height:normal;
-    color:#808080;
-    text-align:center;
-    text-wrap:normal;
-}
-
-#side_cat{
-    margin-top:40px;
-    list-style:none;
-}
-
-#side_pages{
-    list-style:none;
-        color:#808080;
-
-}
-
-.side_widget{
-        color:#808080;
-        display:block;
-        position:relative;
-        text-align:center !important;
-        width:100% !important;
-    margin-top:30px !important;        
-}
-
-.side_widget ul{
-    padding:0px;
-}
-.widget_title{
-    font-size:1.1em;
-    text-align:center;
-    color:white; 
-}
-
-
-#side_logo img{
-    width:50px;
-    margin-left:40%;
-}
-
-
-
-
-#side li{
-    font-size:1.1em;
-    list-style:none;
-    min-width:50px;
-    text-align:center;
-    color:#808080;
-    margin-top:10px;
-    margin-bottom:5px;
-    width:auto;
-        
-}
-
-#side_cat a{
-    text-decoration:none;
-    color:inherit;
-}
-
-#side_cat li:hover{
-color:White;
-}
 
 #social{
     position:relative;
@@ -378,17 +429,22 @@ a:hover{
 #footer{
     display:block;
     position:relative;
-    width:50%;
+    width:92%;
+    margin-left:3%;
     border-top:1px black solid;
     top:80px;
-    padding-left:5px;
     clear:both;
-    padding-left:25%;
-    padding-right:25%;
-    text-align:center;
+    padding-left:5%;    
+    background:url('bg3.png');
     color:#666666;
     padding-top:10px;
+    padding-bottom:10px;
     
+}
+
+.spacer{
+  clear:both;
+  display:block;
 }
 
 
@@ -412,26 +468,47 @@ a:hover{
     cursor:pointer;
 }
 
-.side_content{
-    display:none;
-}
+
 
 #f_about{
     margin-top:10px;
     padding-bottom:5px;
-    border-top:1px #FF0080 solid;
+    display:block;
+    position:relative;
+    float:left;
 
 }
 
 #f_website{
     margin-top:10px;
     padding-bottom:10px;
-    border-top:1px #0080FF solid;
+    display:block;
+    position:relative;
+    width:100%;
+    float:left;
+    text-align:center;
 
 
 }
+
+.left{
+  text-align:left;
+  display:block;
+  position:relative;
+  float:left;
+  border-left:10px solid black;
+  padding-left:10px;
+}
+
 
 #footer a:hover{
     color:#0080FF;
 }
 
+#footer_social{
+        font-family:social;
+        font-size:40px;
+        color:#333333;
+        margin-bottom:30px;
+        line-height:1.2em;
+}

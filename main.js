@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-$('#arrow').click(slide_out);
 
 function slide_out(){
 $('#arrow_close').css("display","block"); 
