@@ -4,9 +4,7 @@
 
         <div id="arrow">
         </div>
-        <div id="arrow_close">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/arrow_close.png" width="30px;">
-        </div>
+        
         
         <div class="side_content">
             <div id="side_logo">
@@ -36,6 +34,8 @@
 
    </div>     
    </div>
+	<div class="popover">
+	</div>
 </div>
 </div>
         
