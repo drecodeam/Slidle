@@ -36,14 +36,29 @@
 <?php the_content( $more_link_text, $strip_teaser ); ?>
                         </div>
                         
+                        <div class="spacer"></div>
+                        
                         </div>
                         <!-- Text End-->
 
 
+    <div class="comments-template">
+                <?php comments_template(); ?>
+                
+            </div>
+    <ol class="commentlist">
+<?php wp_list_comments(); ?>
+</ol>
     
 <?php endwhile;?>
+
+<div class="navigation">
+        <div class="prev"><?php previous_post_link('< %link') ?></div>
+        <div class="next"><?php next_post_link(' %link >') ?></div>
+        <div class="spacer"></div>
+    </div>
+ 
 <?php endif;?>
-<?php comments_template(); ?>
 
 </div>
     

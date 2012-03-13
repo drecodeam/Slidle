@@ -24,8 +24,8 @@ eflgv
 
 
 <div id="f_website">
-        <div class="left">Slidle Theme by ankur anand. | Powered by wordpress</div>
-       
+        <div class="left">     <a href="www.wordpress.org">  <img src="<?php bloginfo('stylesheet_directory'); ?>/wp-logo.png" width="50px"></a>
+Slidle Theme by ankur anand. | Powered by <a href="www.wordpress.org">wordpress</a></div>
 
 </div>
 

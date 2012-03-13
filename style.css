@@ -24,6 +24,7 @@ letter-spacing:0px;
 font-size:15px;
 margin:0px;
 font-family:sans-serif;
+
 }
 
 
@@ -167,8 +168,20 @@ font-family:sans-serif;
 color:White;
 }
 
+#subscribe{
+    text-align:center;
+    color:#808080;
+}
+
+#subscribe a:hover{
+    color:#FF8000;
+    cursor:pointer;
+}
+
+
 /*sidebar css ends*/
 
+/*header css starts*/
 
 #header{
     line-height:normal;
@@ -205,6 +218,7 @@ color:White;
 
 
 
+/*header css ends*/
 
 
 .popover{
@@ -356,6 +370,7 @@ margin-left:10%;
     display:block;
     color:#191919;
     font-weight:100;
+    text-align:left;
 
 }
 
@@ -425,6 +440,190 @@ a:hover{
     color:#ACE4E6;
 }
 
+/*liveit page css*/
+
+#header{
+  margin-left:5% !important;
+  text-align:left;
+  margin-top:20px;
+  font-size:2em;
+}
+
+
+#liveit_title{
+  display:block;
+  position:relative;
+  margin-left:5%;
+  font-size:11em;
+  font-family:sans-serif;
+  clear:left;
+  float:left;
+  margin-top:-5%;
+  letter-spacing:-5px;
+  color:#FFD200;
+  line-height:normal;
+}
+
+#liveit_nav_menu{
+  clear:right;
+  float:left;
+  display:block;
+  position:relative;
+  margin-left:8%;
+  list-style:none;
+  background:none;
+  border-left:5px solid grey;
+  padding:10px;
+  margin-top:0px;
+  font-size:1.5em;
+}
+
+#liveit_menu li{
+  background:none;
+  
+}
+
+#liveit_github{
+  display:none;
+  position:relative;
+  right:10px;
+  float:left;
+  height:auto;
+  width:20%;
+  border-left:1px dashed black;
+  padding:10px;
+  min-height:20px;
+}
+
+#github_content{
+  float:left;
+  margin-left:5%;
+  width:70%;
+  display:block;
+  position:relative;
+}
+.liveit_post_info{
+    position:relative;
+    display:block;
+    width:10%;
+    margin-top:40px;
+    float:left;
+    clear:left;
+    margin-left:20%;
+}
+
+.liveit_post_entry{
+    display:block;
+    width:60%;
+    float:left;
+    margin-left:0px;
+    margin-top:40px;
+    border-left:3px solid #ACE4E6;
+    padding-left:5px;
+    position:relative;
+    text-align:justify;
+
+}
+
+.liveit_post_date{
+    font-size:1.5em;
+    color:#CCCCCC;
+    line-height:0.8em;
+    font-weight:500;
+}
+
+.liveit_post_category{
+    margin-top:20px;
+    text-decoration:none !important;
+    border-top:1px solid #ACE4E6;
+    line-height:1.5em;
+    padding-top:10px;
+    display:block;
+    position:relative;
+    float:left;
+
+    
+}
+
+.liveit_post_category a{
+    border-radius:20px;
+    padding:5px 10px 5px 10px;
+    text-decoration:none !important;
+    color:#4B4B4B;
+    background:#ACE4E6;
+    font-size:12px;
+    margin-top:15px;
+    font-weight:500;
+}
+
+.liveit_post_category a:hover{
+    background:#66FFCC;
+
+}
+
+
+.liveit_post_text{
+    top:0px;
+    width:100%;
+    display:block;
+    position:relative;
+    float:left;
+    color:#4C4C4C;
+    font-size:1em;
+        
+
+}
+
+
+.liveit_post_comment{
+    line-height:normal;
+    border-top:1px solid #ACE4E6;
+    float:left;
+    display:block;
+    margin-top:10px;
+    font-size:1.5em;
+    clear:both;
+    position:relative;
+    
+}
+
+
+
+
+.liveit_post_comment a:hover{
+    color:#33CC99;
+}
+.liveit_post_title{
+    top:0px;
+    width:70%;
+    float:left;
+    display:block;
+    color:#191919;
+    font-weight:100;
+    text-align:left;
+
+}
+
+.liveit_post_title a:hover{
+    color:#ACE4E6;
+}
+
+.liveit_post_title a{
+        text-decoration:none !important;
+        font-size:1.5em;
+        color:black;
+
+}
+
+
+
+
+
+
+/*liveit page css ends*/
+
+/*footer css*/
+
 
 #footer{
     display:block;
@@ -458,15 +657,6 @@ a:hover{
 
 
 
-#subscribe{
-    text-align:center;
-    color:#808080;
-}
-
-#subscribe a:hover{
-    color:#FF8000;
-    cursor:pointer;
-}
 
 
 
@@ -512,3 +702,70 @@ a:hover{
         margin-bottom:30px;
         line-height:1.2em;
 }
+
+#respond{
+  display:block;
+  position:relative;
+  clear:both;
+  
+}
+
+.comments-template{
+    margin-left:30%;
+  margin-right:20%;
+  margin-top:20%;
+  display:block;
+  position:relative;
+
+}
+
+.commentlist{
+  margin-left:30%;
+  margin-right:20%;
+  clear:both;
+  list-style:none;
+  border-top:3px solid black;
+}
+
+.commentlist li{
+  border-bottom:2px solid #ACE4E6;
+  margin-top:20px;
+  
+}
+
+.comment-author .fn{
+  font-style:normal;
+}
+
+.commentlist .children {
+  list-style:none;
+  display:block;
+  position:relative;
+  margin-left:10px;
+  border-left:1px solid black;
+  margin-bottom:10px;
+}
+
+.children li{
+  border:none;
+}
+
+.navigation{
+  margin-left:30%;
+  display:block;
+  position:relative;
+  width:55%;
+  margin-top:40px;
+  border-top:2px solid grey;
+  font-family:sans-serif;
+}
+
+.navigation .next{
+  float:right;
+}
+
+.navigation .prev{
+  float:left;
+}
+
+/*footer css ends*/

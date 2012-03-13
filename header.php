@@ -4,7 +4,7 @@
 <html <?php language_attributes(); ?>>
     <head>
 	
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 
@@ -27,6 +27,8 @@
 	 * generally use this hook to add elements to <head> such
 	 * as styles, scripts, and meta tags.
 	 */
+if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
+
 	wp_head();
 ?>
 </head>
